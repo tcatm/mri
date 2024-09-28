@@ -47,14 +47,14 @@ static const UartConfiguration g_uartConfigurations[] =
     },
     {
         &(LPC_SC->PCLKSEL1),
-        &(LPC_PINCON->PINSEL0),
-        &(LPC_PINCON->PINSEL0),
+        &(LPC_PINCON->PINSEL4),
+        &(LPC_PINCON->PINSEL4),
         (LPC_UART_TypeDef*)LPC_UART2,
         1 << 24,
         3 << 16,
-        3 << 20,
-        3 << 22,
-        0x55555555
+        3 << 16,
+        3 << 18,
+        0xAAAAAAAA
     },
     {
         &(LPC_SC->PCLKSEL1),
